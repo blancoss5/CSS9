@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.titulo{
+    background-color: lime;
+    position: absolute;
+    width: 10%;
+    top: 50px;
+    right: 0;
+}
+
+.uno{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(255, 255, 0, 0.5);
+    position:relative;
+
+    /*
+    position: static, relative, absolute,fixed,sticky;
+    static: por defecto
+    relative: podemos mover solo a este contenedor y no afecta a otros
+               propiedades offset: top,bottom,right,left
+                (se basa en una referencia inicial,no altera el trabajo de flujo o layout)
+    si manejamos posicion relative no usamos MARGIN-top, sinos top
+    absolute: ocupa solo un espacio necesario, si es que no tiene declarado un ancho y alto
+                se pierde el flujo de trabajo, 
+                su referencia es de acuerdo a una etiqueta padre
+                el padre tiene que tener position:relative;
+se usan mas q todo para imagenes y texto
+Y SUBMENUS TAMBIEN
+    
+    */
+    top: 250px;
+}
+.dos{
+    position: relative;
+    width: 55%;
+    height: 500px;
+    float: left;
+   background-color: red;
+   /*  background-color: yellow;*/
+
+}
+.tres{
+    width: 45%;
+    height: 250px;
+    float: right;
+    background-color: green;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
